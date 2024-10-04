@@ -1,6 +1,7 @@
 [
     {
         "id": 1,
+        "image": "/frontend-hub/image/the artist web.jpg",
         "icon": "",
         "name_me": "the artist web",
         "web_developer": "web developer",
@@ -8,6 +9,7 @@
     },
     {
         "id": 2,
+        "image": "/frontend-hub/image/the artist web.jpg",
         "icon": "",
         "name_me": "the artist web",
         "web_developer": "web developer",
@@ -15,6 +17,7 @@
     },
     {
         "id": 3,
+        "image": "/frontend-hub/image/the artist web.jpg",
         "icon": "",
         "name_me": "the artist web",
         "web_developer": "web developer",
@@ -22,6 +25,7 @@
     },
     {
         "id": 4,
+        "image": "/frontend-hub/image/the artist web.jpg",
         "icon": "",
         "name_me": "the artist web",
         "web_developer": "web developer",
@@ -29,6 +33,7 @@
     },
     {
         "id": 5,
+        "image": "/frontend-hub/image/the artist web.jpg",
         "icon": "",
         "name_me": "the artist web",
         "web_developer": "web developer",
@@ -36,6 +41,7 @@
     },
     {
         "id": 6,
+        "image": "/frontend-hub/image/the artist web.jpg",
         "icon": "",
         "name_me": "the artist web",
         "web_developer": "web developer",
@@ -43,6 +49,7 @@
     },
     {
         "id": 7,
+        "image": "/frontend-hub/image/the artist web.jpg",
         "icon": "",
         "name_me": "the artist web",
         "web_developer": "web developer",
@@ -50,6 +57,7 @@
     },
     {
         "id": 8,
+        "image": "/frontend-hub/image/the artist web.jpg",
         "icon": "",
         "name_me": "the artist web",
         "web_developer": "web developer",
@@ -57,6 +65,7 @@
     },
     {
         "id": 9,
+        "image": "/frontend-hub/image/the artist web.jpg",
         "icon": "",
         "name_me": "the artist web",
         "web_developer": "web developer",
@@ -64,6 +73,7 @@
     },
     {
         "id": 10,
+        "image": "/frontend-hub/image/the artist web.jpg",
         "icon": "",
         "name_me": "the artist web",
         "web_developer": "web developer",
