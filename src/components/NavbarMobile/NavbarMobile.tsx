@@ -59,7 +59,7 @@ const NavbarMobile = () => {
           <i className="fa-solid fa-bars"></i>
         </button>
 
-        <NavLink to="/" className={({ isActive }) => isActive ? "navbar-link-home active label-large" : "navbar-link-home label-large"}>
+        <NavLink to="/frontend-hub" className={({ isActive }) => isActive ? "navbar-link-home active label-large" : "navbar-link-home label-large"}>
           <i className="fa-solid fa-home"></i>
         </NavLink>
 
