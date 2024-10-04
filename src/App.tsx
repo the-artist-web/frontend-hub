@@ -1,5 +1,5 @@
 {/* router */}
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { HashRouter as Router, Route, Routes } from 'react-router-dom';
 
 {/* components */}
 import Header from './components/Header/Header';
@@ -12,7 +12,7 @@ import Footer from './components/Footer/Footer';
 import Home from './pages/Home/Home';
 import Docs from './pages/Docs/Docs';
 import About from './pages/About/About';
-// import NotFound from './pages/NotFound/NotFound';
+import NotFound from './pages/NotFound/NotFound';
 
 function App() {
   return (
@@ -59,10 +59,10 @@ function App() {
             </main>
           </>
         } />
-        {/* <Route path='*' element={<NotFound />} /> */}
+        <Route path='*' element={<NotFound />} />
       </Routes>
     </Router>
   );
-}
+};
 
 export default App
