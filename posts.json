@@ -1,0 +1,72 @@
+[
+    {
+        "id": 1,
+        "icon": "",
+        "name_me": "the artist web",
+        "web_developer": "web developer",
+        "text_post": "ابدأ بفهم الأساسيات: قبل الغوص في مشاريع معقدة، تأكد من أنك تفهم أساسيات البرمجة، مثل الهياكل الشرطية، الحلقات، والمصفوفات."
+    },
+    {
+        "id": 2,
+        "icon": "",
+        "name_me": "the artist web",
+        "web_developer": "web developer",
+        "text_post": "اختر لغة برمجة مناسبة: لكل مجال لغاته المفضلة، لذا اختر لغة تتناسب مع هدفك (مثل Python للذكاء الاصطناعي أو JavaScript لتطوير الويب)."
+    },
+    {
+        "id": 3,
+        "icon": "",
+        "name_me": "the artist web",
+        "web_developer": "web developer",
+        "text_post": "اكتب كوداً نظيفاً: حاول أن تكتب الكود بطريقة منظمة وسهلة القراءة باستخدام التعليقات والأسماء الواضحة للمتغيرات والدوال."
+    },
+    {
+        "id": 4,
+        "icon": "",
+        "name_me": "the artist web",
+        "web_developer": "web developer",
+        "text_post": "تعلم التفكير التحليلي: حل المشكلات البرمجية يعتمد على التفكير المنطقي. حاول دائماً تقسيم المشكلة إلى أجزاء صغيرة يمكن حلها تدريجيًا."
+    },
+    {
+        "id": 5,
+        "icon": "",
+        "name_me": "the artist web",
+        "web_developer": "web developer",
+        "text_post": "استخدم التحكم في الإصدارات (Git): لتجنب فقدان عملك وللتعاون مع الآخرين، استخدم أنظمة مثل Git لإدارة نسخ الكود والتعديلات."
+    },
+    {
+        "id": 6,
+        "icon": "",
+        "name_me": "the artist web",
+        "web_developer": "web developer",
+        "text_post": "ممارسة مستمرة: البرمجة تحتاج إلى ممارسة دائمة. حاول إنشاء مشاريع صغيرة أو حل تحديات برمجية على مواقع مثل LeetCode أو HackerRank."
+    },
+    {
+        "id": 7,
+        "icon": "",
+        "name_me": "the artist web",
+        "web_developer": "web developer",
+        "text_post": "اقرأ الأكواد المفتوحة المصدر: مشاهدة كيف يكتب المطورون الآخرون الأكواد يمكن أن يعلمك تقنيات جديدة ويحسن أسلوبك في البرمجة."
+    },
+    {
+        "id": 8,
+        "icon": "",
+        "name_me": "the artist web",
+        "web_developer": "web developer",
+        "text_post": "اطلب المساعدة عند الحاجة: لا تخف من السؤال أو طلب المساعدة. يمكنك التعلم من الآخرين عبر المنتديات مثل Stack Overflow."
+    },
+    {
+        "id": 9,
+        "icon": "",
+        "name_me": "the artist web",
+        "web_developer": "web developer",
+        "text_post": "اختبر الكود بانتظام: لا تنتظر حتى النهاية لاختبار الكود. قم بتجربة واختبار الأجزاء المختلفة أثناء الكتابة لتجنب تراكم الأخطاء."
+    },
+    {
+        "id": 10,
+        "icon": "",
+        "name_me": "the artist web",
+        "web_developer": "web developer",
+        "text_post": "لا تتوقف عن التعلم: البرمجة مجال يتغير بسرعة، لذا احرص"
+    }
+]
