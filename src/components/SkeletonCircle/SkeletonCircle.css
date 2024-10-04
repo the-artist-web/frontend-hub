@@ -1,0 +1,25 @@
+/*---------------------------------------------------------*\
+  #SKELETON CIRCLE
+\*---------------------------------------------------------*/
+
+.circle-box {
+    padding-block: 20px 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+.circle-box .circle {
+    border: 4px solid var(--main-color);
+    border-top-color: transparent;
+    border-radius: var(--radius-pill);
+    width: 36px;
+    height: 36px;
+    animation: circle 500ms linear infinite;
+}
+
+@keyframes circle {
+    0% { transform: rotate(-360deg); }
+    100% { transform: rotate(0); }
+}

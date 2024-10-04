@@ -1,0 +1,45 @@
+/*---------------------------------------------------------*\
+  #SEARCG HOME
+\*---------------------------------------------------------*/
+
+.search-home {
+  padding: 0 16px 20px;
+  border-bottom: 2px solid var(--border-color);
+}
+
+.search-home .input-box {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.search-home .input-box .img-input-box {
+  border: 2px solid var(--border-color);
+  border-radius: var(--radius-pill);
+  min-width: 53px;
+  min-height: 53px;
+  max-width: 53px;
+  max-height: 53px;
+}
+
+.search-home .button-search {
+  background-color: var(--main-color);
+  border-radius: var(--radius-pill);
+  padding: 13px 33px;
+  margin-inline: auto 0;
+  transition: 0.4s;
+}
+
+.search-home .button-search:hover {
+  background-color: var(--other-color);
+  transition: 0.4s;
+}
+
+/*---------------------------------------------------------*\
+  #CARD LIST
+\*---------------------------------------------------------*/
+
+.card-list {
+  display: flex;
+  flex-direction: column;
+}

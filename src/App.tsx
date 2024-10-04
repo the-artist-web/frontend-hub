@@ -1,35 +1,68 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+{/* router */}
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+
+{/* components */}
+import Header from './components/Header/Header';
+import NavbarMobile from './components/NavbarMobile/NavbarMobile';
+import Aside from './components/Aside/Aside';
+import LangBox from './components/LangBox/LangBox';
+import Footer from './components/Footer/Footer';
+
+{/* pages */}
+import Home from './pages/Home/Home';
+import Docs from './pages/Docs/Docs';
+import About from './pages/About/About';
+import NotFound from './pages/NotFound/NotFound';
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+    <Router>
+      <Routes>
+        <Route path='/' element={
+          <>
+            <NavbarMobile />
+            <main className="main">
+              <Aside />
+              <div className="article">
+                <Header title="الصفحة الرئيسية" />
+                <Home />
+                <Footer />
+              </div>
+              <LangBox />
+            </main>
+          </>
+        } />
+        <Route path='/docs' element={
+          <>
+            <NavbarMobile />
+            <main className="main">
+              <Aside />
+              <div className="article">
+                <Header title="مستندات" />
+                <Docs />
+                <Footer />
+              </div>
+              <LangBox />
+            </main>
+          </>
+        } />
+        <Route path='/about' element={
+          <>
+            <NavbarMobile />
+            <main className="main">
+              <Aside />
+              <div className="article">
+                <About />
+                <Footer />
+              </div>
+              <LangBox />
+            </main>
+          </>
+        } />
+        <Route path='*' element={<NotFound />} />
+      </Routes>
+    </Router>
+  );
 }
 
 export default App

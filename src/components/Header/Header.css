@@ -1,0 +1,14 @@
+/*---------------------------------------------------------*\
+  #HEADER
+\*---------------------------------------------------------*/
+
+.header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 70px;
+    width: 100%;
+    margin: 0 0 20px;
+}
+  
+.header .container i { font-size: var(--fs-title-medium); }

@@ -1,0 +1,62 @@
+/*---------------------------------------------------------*\
+  #NAVBAR MOBILE
+\*---------------------------------------------------------*/
+
+.navbar-mobile {
+  background-color: var(--bg-color);
+  border-top: 2px solid var(--border-color);
+  padding: 10px 16px;
+  height: 70px;
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: -2px;
+  z-index: 10;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  place-items: center;
+  gap: 16px;
+}
+
+.navbar-mobile .navbar-link {
+  background-color: transparent;
+  border-radius: var(--radius-pill);
+  width: 100%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.4s;
+}
+
+.navbar-mobile .navbar-link:hover {
+  background-color: var(--second-bg-color);
+  transition: 0.4s;
+}
+
+.navbar-mobile .navbar-link-home {
+  background-color: transparent;
+  border-radius: var(--radius-pill);
+  width: 100%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.4s;
+}
+
+.navbar-mobile .navbar-link-home.active { background-color: var(--main-color); }
+
+.navbar-mobile .navbar-link-home:hover {
+  background-color: var(--main-color);
+  transition: 0.4s;
+}
+
+/*---------------------------------------------------------*\
+  #MEDIA QUERY
+\*---------------------------------------------------------*/
+
+/**
+ * fit size 992px
+ */
+@media screen and (min-width: 992px) { .navbar-mobile { display: none; } }

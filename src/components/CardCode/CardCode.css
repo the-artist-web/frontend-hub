@@ -1,0 +1,66 @@
+/*---------------------------------------------------------*\
+  #CARD CODE
+\*---------------------------------------------------------*/
+
+.card-code {
+  border-bottom: 2px solid var(--border-color);
+  padding: 16px;
+}
+
+.card-code .card-title {
+  direction: ltr;
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  margin: 0 0 10px;
+}
+
+.card-code .card-title .img-title {
+  filter: drop-shadow(0 0 2px black);
+  min-width: 53px;
+  min-height: 53px;
+  max-width: 53px;
+  max-height: 53px;
+}
+
+.card-code .card-title .title-body {
+  display: grid;
+  gap: 1px;
+}
+
+.card-code .card-title .title-body .name { text-transform: capitalize; }
+
+.card-code .card-title .title-body .frontend { color: var(--second-color); }
+
+.card-code .card-body .description-lang {
+  text-align: justify;
+  line-height: 30px;
+  padding: 0 0 15px 66px;
+}
+
+.card-code .card-body .code {
+  font-family: 'Courier New', Courier, monospace;
+  border: 2px solid var(--border-color);
+  border-radius: var(--radius-8);
+  margin-inline: 66px 0;
+  padding: 20px;
+  direction: ltr;
+  text-wrap: nowrap;
+  line-height: 30px;
+  width: auto;
+  max-width: 659.63px;
+  overflow-x: scroll;
+}
+
+.card-code .card-body .code::-webkit-scrollbar { display: none; }
+
+/*---------------------------------------------------------*\
+  #MEDIA QUERY
+\*---------------------------------------------------------*/
+
+/**
+ * fit size 992px
+ */
+@media screen and (min-width: 992px) {
+  .card-code { padding: 20px; }
+}

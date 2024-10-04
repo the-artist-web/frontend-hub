@@ -1,0 +1,189 @@
+/*---------------------------------------------------------*\
+  #HOME ME
+\*---------------------------------------------------------*/
+
+.home-me {
+  border-bottom: 2px solid var(--border-color);
+  padding-block: 0 20px;
+}
+
+.home-me figure { position: relative; }
+
+.home-me figure .bg-ablout { height: 220px; }
+
+.home-me figure .the-artist-web {
+  border: 3px solid var(--bg-color);
+  border-radius: var(--radius-pill);
+  min-width: 160px;
+  min-height: 160px;
+  max-width: 160px;
+  max-height: 160px;
+  position: absolute;
+  bottom: -80px;
+  right: 20px;
+}
+
+.home-me .home-me-body { padding: 110px 20px 0; }
+
+.home-me .home-me-body .title-content {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  margin: 0 0 28px;
+}
+
+.home-me .home-me-body .title-content .title-me .the-artist-web-name { margin: 0 0 15px; }
+
+.home-me .home-me-body .title-content .title-me .email { color: var(--second-color); }
+
+.home-me .home-me-body .title-content .btn-github {
+  background-color: var(--text-color);
+  border-radius: var(--radius-pill);
+  border: 2px solid transparent;
+  text-transform: capitalize;
+  color: var(--bg-color);
+  padding: 14px 25px;
+  text-wrap: nowrap;
+  display: none;
+  transition: 0.4s;
+}
+
+.home-me .home-me-body .title-content .btn-github:hover {
+  background-color: var(--second-bg-color);
+  border: 2px solid var(--border-color);
+  color: var(--text-color);
+  transition: 0.4s;
+}
+
+.home-me .home-me-body .description {
+  text-align: justify;
+  line-height: 30px;
+}
+
+/*---------------------------------------------------------*\
+  #SLIDER SKILlS
+\*---------------------------------------------------------*/
+
+.skills { 
+  border-bottom: 2px solid var(--border-color);
+  padding: 20px; 
+}
+
+.skills .slider-skills {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  overflow: scroll;
+  scroll-behavior: smooth;
+}
+
+.skills .slider-skills::-webkit-scrollbar { display: none; }
+
+.skills .slider-skills .card-skill {
+  min-width: 88.48px;
+  max-width: 88.48px;
+}
+
+.skills .slider-skills .card-skill .img-card {
+  filter: drop-shadow(0 0 2px black);
+  min-height: 70px;
+  min-width: 70px;
+  max-height: 70px;
+  max-width: 70px;
+  margin: 0 auto 10px;
+}
+
+.skills .slider-skills .card-skill .name-skill {
+  text-transform: capitalize;
+  text-align: center;
+  text-wrap: nowrap;
+}
+
+/**
+ * skeleton
+ */
+.skeleton-card-skill {
+  background-color: var(--second-color);
+  border-radius: var(--radius-pill);
+  min-height: 100px;
+  min-width: 100px;
+  max-height: 100px;
+  max-width: 100px;
+  animation: skeleton_card_skill 500ms linear alternate infinite;
+}
+
+@keyframes skeleton_card_skill {
+  0% { opacity: 0.2; }
+  100% { opacity: 0.4; }
+}
+
+/*---------------------------------------------------------*\
+  #POSTS
+\*---------------------------------------------------------*/
+
+.posts {
+  display: flex;
+  flex-direction: column;
+}
+
+.posts .card-post {
+  border-bottom: 2px solid var(--border-color);
+  padding: 20px;
+}
+
+.posts .card-post .card-title {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  direction: ltr;
+  margin: 0 0 10px;
+}
+
+.posts .card-post .card-title .img-title {
+  border: 2px solid var(--border-color);
+  filter: drop-shadow(0 0 2px black);
+  border-radius: var(--radius-pill);
+  min-width: 53px;
+  min-height: 53px;
+  max-width: 53px;
+  max-height: 53px;
+}
+
+.posts .card-post .card-title .title-content {
+  display: grid;
+  gap: 1px;
+}
+
+.posts .card-post .card-title .title-content .name { text-transform: capitalize; }
+
+.posts .card-post .card-title .title-content .email { color: var(--second-color); }
+
+.posts .card-post .post-text { 
+  padding: 0 0 20px 66px; 
+  text-align: justify;
+  line-height: 30px;
+}
+
+.posts .card-post .love-post {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: var(--second-color);
+  transition: 0.4s;
+}
+
+.posts .card-post .love-post:hover {
+  color: var(--main-color);
+  transition: 0.4s;
+}
+
+.posts .card-post .love-post i { font-size: var(--fs-label-large); }
+
+.posts .card-post .save.active { display: none; }
+
+.posts .card-post .unsaved { display: none; }
+
+.posts .card-post .unsaved.active {
+  color: var(--main-color);
+  display: flex; 
+}

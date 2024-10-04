@@ -1,0 +1,119 @@
+/*---------------------------------------------------------*\
+  #ASIDE
+\*---------------------------------------------------------*/
+
+.aside {
+  background-color: var(--bg-color);
+  position: fixed;
+  top: 0;
+  right: -1000px;
+  bottom: 0;
+  z-index: 12;
+  width: 260px;
+  height: 100vh;
+  padding: 0 16px 25px;
+  overflow: scroll;
+  transition: 0.6s;
+}
+
+.aside::-webkit-scrollbar { display: none; }
+
+.aside.active {
+  right: 0;
+  transition: 0.6s;
+}
+
+.aside .logo {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  font-size: 1.8rem;
+  font-weight: 600;
+  height: 70px;
+  width: 100%;
+  padding-inline: 16px 0;
+  margin: 0 0 20px;
+}
+
+.aside .title-aside {
+  color: var(--second-color);
+  padding: 0 16px 8px;
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+.aside .aside-list {
+  display: flex;
+  flex-direction: column;
+  padding: 0 0 20px;
+}
+
+.aside .aside-list .aside-link {
+  border-radius: var(--radius-pill);
+  padding: 12px 16px;
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  transition: 0.4s;
+}
+
+.aside .aside-list .aside-link:hover {
+  background-color: var(--border-color);
+  transition: 0.4s;
+}
+
+.aside .aside-list .aside-link.active { color: var(--main-color); }
+
+.aside .aside-list .aside-link i {
+  font-size: 1.42rem;
+  width: 28.4px;
+  display: grid;
+  place-items: center;
+}
+
+.aside .btn-mood {
+  background-color: var(--main-color);
+  border-radius: var(--radius-pill);
+  padding: 16px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  transition: 0.4s;
+}
+
+.aside .theme-light.active { display: none; }
+
+.aside .theme-dark { display: none; }
+
+.aside .theme-dark.active { display: flex; }
+
+.aside .btn-mood:where(:hover, :focus-visible) {
+  background-color: var(--other-color);
+  transition: 0.4s;
+}
+
+/*---------------------------------------------------------*\
+  #MEDIA QUERY
+\*---------------------------------------------------------*/
+
+/**
+ * fit size 992px
+ */
+@media screen and (min-width: 992px) {
+  .aside {
+    background-color: transparent;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+  }
+}
+
+/**
+ * fit size 1440px
+ */
+@media screen and (min-width: 1440px) {
+  .aside { padding: 0 0 25px 30px; }
+}

@@ -1,0 +1,161 @@
+/*---------------------------------------------------------*\
+  #SEARCHBAR
+\*---------------------------------------------------------*/
+
+.searchbar {
+  background-color: var(--bg-color);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: -1000px;
+  bottom: 0;
+  z-index: 12;
+  padding: 90px 0 0;
+  overflow: scroll;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.4s;
+}
+
+.searchbar::-webkit-scrollbar { display: none; }
+
+.searchbar.active {
+  right: 0;
+  opacity: 1;
+  visibility: visible;
+  transition: 0.4s;
+}
+
+.searchbar .header {
+  background-color: var(--bg-color);
+  backdrop-filter: blur(10px);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  width: 100%;
+  height: 70px;
+  padding-inline: 16px;
+}
+
+.searchbar .header .input-searchbar-box { 
+  position: relative;
+  width: 100%; 
+}
+
+.searchbar .header .input-searchbar-box .input-searchbar {
+  background-color: var(--second-bg-color);
+  border-radius: var(--radius-pill);
+  padding-inline: 50px 16px;
+  height: 50px;
+}
+
+.searchbar .header .input-searchbar-box i {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: var(--fs-label-medium);
+  color: var(--second-color);
+}
+
+.searchbar .header .close-searchbar {
+  background-color: var(--second-bg-color);
+  border-radius: var(--radius-pill);
+  color: var(--second-color);
+  min-width: 50px;
+  min-height: 50px;
+  max-width: 50px;
+  max-height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.4s;
+}
+
+.searchbar .header .close-searchbar:hover {
+  background-color: var(--second-color);
+  color: var(--text-color);
+  transition: 0.4s;
+}
+
+.searchbar .searchbar-list {
+  display: grid;
+  gap: 10px;
+  direction: ltr;
+}
+
+.searchbar .searchbar-list .card-searchbar {
+  border-top: 2px solid var(--border-color);
+  display: flex;
+  align-items: center;
+  padding: 20px 16px;
+  gap: 20px;
+  transition: 0.4s;
+  animation: animation_card_searchbar 150ms linear alternate;
+}
+
+@keyframes animation_card_searchbar {
+  0% {
+    transform: translateY(-10px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.searchbar .searchbar-list .card-searchbar:hover {
+  padding: 20px 25px;
+  transition: 0.4s;
+}
+
+.searchbar .searchbar-list .card-searchbar .img-card {
+  filter: drop-shadow(0 0 2px black);
+  width: 55px;
+  height: 55px;
+}
+
+.searchbar .searchbar-list .card-searchbar .card-body {
+  display: grid;
+  gap: 6px;
+}
+
+.searchbar .searchbar-list .card-searchbar .card-body .name { text-transform: capitalize; }
+
+.searchbar .searchbar-list .card-searchbar .card-body .frontend { color: var(--second-color); }
+
+/*---------------------------------------------------------*\
+  #MEDIA QUERY
+\*---------------------------------------------------------*/
+
+/**
+ * fit size 992px
+ */
+@media screen and (min-width: 992px) {
+  .searchbar {
+    border: 2px solid var(--border-color);
+    background-color: var(--bg-color);
+    border-radius: 20px;
+    left: 50%;
+    right: auto;
+    bottom: 30px;
+    width: 768px;
+    transform: translateX(-50%);
+  }
+  
+  .searchbar.active { 
+    top: 30px; 
+    right: auto;
+  }
+}

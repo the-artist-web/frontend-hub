@@ -1,0 +1,40 @@
+/*---------------------------------------------------------*\
+  #BODY DOCS
+\*---------------------------------------------------------*/
+
+.body-docs .input-box {
+  position: relative;
+  padding-inline: 16px;
+  width: 100%;
+  margin: 0 0 20px;
+
+}
+
+.body-docs .input-box .input-docs {
+  background-color: var(--second-bg-color);
+  border-radius: var(--radius-pill);
+  padding: 20px 64.86px 20px 20px;
+}
+
+.body-docs .input-box i {
+  position: absolute;
+  top: 0;
+  right: 16px;
+  bottom: 0;
+  height: 64.86px;
+  width: 64.86px;
+  font-size: var(--fs-title-medium);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--second-color);
+}
+
+/*---------------------------------------------------------*\
+  #CARD CODE LIST
+\*---------------------------------------------------------*/
+
+.card-code-list {
+  display: flex;
+  flex-direction: column;
+}
