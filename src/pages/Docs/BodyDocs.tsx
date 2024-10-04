@@ -37,7 +37,7 @@ const BodyDocs = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const res = await fetch("/data.json");
+        const res = await fetch("/frontend-hub/data.json");
         const fetchedData = await res.json();
 
         setData(fetchedData);

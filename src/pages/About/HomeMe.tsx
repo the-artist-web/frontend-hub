@@ -1,8 +1,8 @@
 import "./About.css"
 
 {/* image bg about */}
-import bg_about from "../../assets/image/bg-about.jpg"
-import the_artist_web from "../../assets/image/the artist web.jpg";
+import bg_about from "/image/bg-about.jpg"
+import the_artist_web from "/image/the artist web.jpg";
 
 const HomeMe = () => {
   return (

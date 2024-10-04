@@ -27,7 +27,7 @@ const Searchbar = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const res = await fetch("/data.json");
+        const res = await fetch("/frontend-hub/data.json");
         const data = await res.json();
         setData(data.slice(0, 13));
         setFilterData(data.slice(0, 13));

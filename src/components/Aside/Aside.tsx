@@ -50,10 +50,10 @@ const Aside = () => {
 
   return (
     <aside className="aside" data-aside>
-      <Link to="/" className="logo">شبكة الفنان</Link>
+      <Link to="/frontend-hub" className="logo">شبكة الفنان</Link>
 
       <div className="aside-list">
-        <NavLink to="/" className={({ isActive }) => isActive ? "aside-link active label-medium" : "aside-link label-medium"}>
+        <NavLink to="/frontend-hub" className={({ isActive }) => isActive ? "aside-link active label-medium" : "aside-link label-medium"}>
           <i className="fa-solid fa-home"></i>
 
           الصفحة الرئيسية

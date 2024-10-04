@@ -1,5 +1,5 @@
 {/* router */}
-import { HashRouter as Router, Route, Routes } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
 {/* components */}
 import Header from './components/Header/Header';
@@ -18,7 +18,7 @@ function App() {
   return (
     <Router>
       <Routes>
-        <Route path='/' element={
+        <Route path='/frontend-hub' element={
           <>
             <NavbarMobile />
             <main className="main">

@@ -1,7 +1,7 @@
 import "./Home.css"
 
 {/* img logo */}
-import imgLogo from "../../assets/image/the artist web.jpg"
+import imgLogo from "/image/the artist web.jpg"
 
 {/* router */}
 import { useLocation } from "react-router-dom"

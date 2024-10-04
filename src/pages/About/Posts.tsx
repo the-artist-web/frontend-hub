@@ -3,9 +3,6 @@ import "./About.css"
 {/* functions react */}
 import { useEffect, useState } from "react"
 
-{/* get image */}
-import image from "../../assets/image/the artist web.jpg"
-
 {/* skeleton circle */}
 import SkeletonCircle from "../../components/SkeletonCircle/SkeletonCircle"
 
@@ -28,7 +25,7 @@ const Posts = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const res = await fetch("/posts.json");
+        const res = await fetch("/frontend-hub/posts.json");
         const data = await res.json();
         setData(data);
         setLoading(false);
@@ -65,7 +62,7 @@ const Posts = () => {
           <div className="card-post" key={index}>
             <div className="card-title">
               <img
-                src={image}
+                src={ele.image}
                 alt={ele.name_me}
                 loading="lazy"
                 className="img-title img-cover"
