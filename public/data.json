@@ -1816,6 +1816,13 @@
       {
         "image": "/frontend-hub/image/tailwind-css.png",
         "cardName": "Tailwind Css",
+        "titleCard": "npm install tailwind-scrollbar<br><br> import tailwandScrollbar from 'tailwind-scrollbar'<br><br> export default {<br> plugins: [tailwandScrollbar],<br> }<br><br><br> <html class='scrollbar-thin scrollbar-track-thin-800 scrollbar-thumb-zinc-500'>",
+        "description": "تضع بها لون الخلفيه تبع الموقع و لون ال text",
+        "lang": "<i class='fa-solid fa-circle circle-violate'></i> Bootstrap"
+      },
+      {
+        "image": "/frontend-hub/image/tailwind-css.png",
+        "cardName": "Tailwind Css",
         "titleCard": "https://tailwindcss.com/",
         "description": "هذه هيا الاكواد الاساسيه لبدء مشروع Tailwind Css اذا كنت بحاجه للمعرفه اكثر عنه ذور موقعهم الخاص.",
         "lang": "<i class='fa-solid fa-circle circle-violate'></i> Bootstrap"
