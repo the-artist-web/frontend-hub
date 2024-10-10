@@ -24,7 +24,7 @@ const SliderSkills = () => {
       try {
         const res = await fetch("/frontend-hub/data.json");
         const data = await res.json();
-        setData(data.slice(0, 13));
+        setData(data.slice(0, 11));
         setLoding(false);
       } catch (error) {
         console.error("Error Fetch Data In Slider Skills");

@@ -29,8 +29,8 @@ const Searchbar = () => {
       try {
         const res = await fetch("/frontend-hub/data.json");
         const data = await res.json();
-        setData(data.slice(0, 13));
-        setFilterData(data.slice(0, 13));
+        setData(data.slice(0, 11));
+        setFilterData(data.slice(0, 11));
         setLoading(false);
       } catch (error) {
         console.error("Error Fetch Data In Searchbar", error);
