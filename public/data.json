@@ -1774,8 +1774,43 @@
       {
         "image": "/frontend-hub/image/tailwind-css.png",
         "cardName": "Tailwind Css",
-        "titleCard": "الشبكة (Grid System)",
-        "description": "نظام الشبكة في Bootstrap يعتمد على شبكة مرنة من 12 عمودًا يمكن استخدامها لتنظيم المحتوى.",
+        "titleCard": "تثبيت Tailwind CSS قم بالتثبيت tailwindcssعبر npm، ثم قم بإنشاء ملفك tailwind.config.js .",
+        "description": "npm install -D tailwindcss<br /> npx tailwindcss init",
+        "lang": "<i class='fa-solid fa-circle circle-violate'></i> Bootstrap"
+      },
+      {
+        "image": "/frontend-hub/image/tailwind-css.png",
+        "cardName": "Tailwind Css",
+        "titleCard": "تكوين مسارات القالب الخاص بك أضف المسارات إلى جميع ملفات القالب الموجودة في ملفك tailwind.config.js.",
+        "description": "/** @type {import('tailwindcss').Config} */<br /> module.exports = {<br /> content: ['./src/**/*.{html,js}'],<br /> theme: {<br /> extend: {},<br /> },<br /> plugins: [],<br /> }",
+        "lang": "<i class='fa-solid fa-circle circle-violate'></i> Bootstrap"
+      },
+      {
+        "image": "/frontend-hub/image/tailwind-css.png",
+        "cardName": "Tailwind Css",
+        "titleCard": "أضف توجيهات Tailwind إلى CSS الخاص بك أضف @tailwindالتوجيهات لكل طبقة من طبقات Tailwind إلى ملف CSS الرئيسي الخاص بك.",
+        "description": "@tailwind base;<br /> @tailwind components;<br /> @tailwind utilities;",
+        "lang": "<i class='fa-solid fa-circle circle-violate'></i> Bootstrap"
+      },
+      {
+        "image": "/frontend-hub/image/tailwind-css.png",
+        "cardName": "Tailwind Css",
+        "titleCard": "ابدأ عملية بناء Tailwind CLI قم بتشغيل أداة CLI لفحص ملفات القالب الخاصة بك بحثًا عن الفئات وإنشاء CSS الخاص بك.",
+        "description": "npx tailwindcss -i ./src/input.css -o ./src/output.css --watch",
+        "lang": "<i class='fa-solid fa-circle circle-violate'></i> Bootstrap"
+      },
+      {
+        "image": "/frontend-hub/image/tailwind-css.png",
+        "cardName": "Tailwind Css",
+        "titleCard": "ابدأ باستخدام Tailwind في HTML الخاص بك أضف ملف CSS المجمّع إلى <head>وابدأ في استخدام فئات الأداة المساعدة Tailwind لتصميم المحتوى الخاص بك.",
+        "description": "&lt;!doctype html><br /> &lt;html><br /> &lt;head><br /> &lt;meta charset='UTF-8'><br /> &lt;meta name='viewport' content='width=device-width, initial-scale=1.0'><br /> &lt;link href='./styles.css' rel='stylesheet'><br /> &lt;/head><br /> &lt;body><br /> &lt;h1 class='text-3xl font-bold underline'><br /> Hello world!<br /> &lt;/h1><br /> &lt;/body><br /> &lt;/html>",
+        "lang": "<i class='fa-solid fa-circle circle-violate'></i> Bootstrap"
+      },
+      {
+        "image": "/frontend-hub/image/tailwind-css.png",
+        "cardName": "Tailwind Css",
+        "titleCard": "هذه هيا الاكواد الاساسيه لبدء مشروع Tailwind Css اذا كنت بحاجه للمعرفه اكثر عنه ذور موقعهم الخاص.",
+        "description": "https://tailwindcss.com/",
         "lang": "<i class='fa-solid fa-circle circle-violate'></i> Bootstrap"
       }
     ]
