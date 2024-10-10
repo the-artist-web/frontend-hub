@@ -1809,6 +1809,13 @@
       {
         "image": "/frontend-hub/image/tailwind-css.png",
         "cardName": "Tailwind Css",
+        "titleCard": "body { @apply bg-zinc-900 text-zinc-50 }",
+        "description": "تضع بها لون الخلفيه تبع الموقع و لون ال text",
+        "lang": "<i class='fa-solid fa-circle circle-violate'></i> Bootstrap"
+      },
+      {
+        "image": "/frontend-hub/image/tailwind-css.png",
+        "cardName": "Tailwind Css",
         "titleCard": "https://tailwindcss.com/",
         "description": "هذه هيا الاكواد الاساسيه لبدء مشروع Tailwind Css اذا كنت بحاجه للمعرفه اكثر عنه ذور موقعهم الخاص.",
         "lang": "<i class='fa-solid fa-circle circle-violate'></i> Bootstrap"
